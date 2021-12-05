@@ -1,0 +1,81 @@
+.container-fluid {
+    background-image: url(/Portafolio/resource/img/background-inicio.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100vh;
+
+
+}
+
+@keyframes tipsy {
+
+    100% {
+        transform: translateX(-50%) translateY(-50%) rotate(360deg);
+    }
+}
+
+.animated-welcome {
+    color: #fffbf1;
+    text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
+    font-size: 80px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: -3px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.animated-welcome:before,
+.animated-welcome:after {
+    content: '';
+    padding: .9em .4em;
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    top: 50%;
+    display: block;
+    border: 15px solid red;
+    transform: translateX(-50%) translateY(-50%) rotate(0deg);
+    animation: 10s infinite alternate ease-in-out tipsy;
+}
+
+.animated-welcome:before {
+    border-color: #d9524a #d9524a rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+    z-index: -1;
+}
+
+.animated-welcome:after {
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #d9524a #d9524a;
+    box-shadow: 25px 25px 25px rgba(46, 46, 49, .8);
+}
+
+.msg-bienvenida {
+    font-weight: bolder;
+    font-size: 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: azure;
+    position: absolute;
+    top: 90%;
+    left: 10%;
+    text-shadow:
+        0 .5px 0 #ccc,
+        0 1px 0 #c9c9c9,
+        0 1.5px 0 #bbb,
+        0 2px 0 #b9b9b9,
+        0 2.5px 0 #aaa,
+        0 3px .5px rgba(0, 0, 0, .1),
+        0 0 2.5px rgba(0, 0, 0, .1),
+        0 .5px 1.5px rgba(0, 0, 0, .3),
+        0 1.5px 2.5px rgba(0, 0, 0, .2),
+        0 2.5px 5px rgba(0, 0, 0, .25),
+        0 5px 5px rgba(0, 0, 0, .2),
+        0 10px 10px rgba(0, 0, 0, .15);
+}
+
+.hit-the-floor {
+    text-align: center;
+}
