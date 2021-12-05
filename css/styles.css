@@ -1,5 +1,5 @@
 .container-fluid {
-    background-image: url(/Portafolio/resource/img/background-inicio.gif);
+    background-image: url(/portafolio.github.io/resource/img/background-inicio.gif);
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0;
@@ -76,6 +76,6 @@
         0 10px 10px rgba(0, 0, 0, .15);
 }
 
-.hit-the-floor {
+.msg-bienvenida{
     text-align: center;
 }
